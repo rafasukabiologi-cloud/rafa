@@ -1,61 +1,110 @@
-body{
-    background:#f3f3f3;
-    color:#333;
-    width:100%;
-    font-family:sans-serif;
-    margin:0 auto;
+/* Pengaturan Dasar Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
 }
 
-.header{
-  width:90%;
-  margin:auto;
-  height:120px;
-  line-height:120px;
-  background:#417aa8;
-  color:#fff;
-}
-<head> 
-  <tittle>belajar</tittle>
-  <link rel="stylesheet" href="style.css">
-<head>
-
-<div class="header">
-  <div class="jarak">
-    <h2>Siap jadi juara</h2>
-  </div>
-</div>
-.jarak{
-  padding:0 2pc;
+/* Pembungkus utama agar website berada di tengah */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-<div class="menu">
-  <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
-  </ul>
-</div>
-
-.menu{
-  background-color:#417aa8;
-  height:50px;
-  position:relative;
-  width:90%;
-  margin:0 auto;
-  padding:0 auto;
+/* Header Ungu */
+header {
+    background-color: #9389a9;
+    color: black;
+    padding: 30px;
+    margin-bottom: 10px;
 }
 
-.menu ul li a {
-  float:left;
-  width:70px;
-  display:block;
-  text-align:center;
-  color:#FFF;
-  text-decoration:none;
+header h1 {
+    margin: 0;
+    font-size: 22px;
 }
 
-.menu ul li a:hover {
-  background-color:#4b88bb;
-  display:block;
+/* Navigasi Bar */
+nav {
+    background-color: #b1a7c4;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Pengaturan Layout Kolom (Flexbox) */
+.main-content {
+    display: flex;
+    gap: 25px;
+}
+
+/* Kolom Artikel (Kiri) */
+.articles {
+    flex: 3; /* Mengambil ruang 3 kali lebih besar */
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.btn-selengkapnya {
+    background-color: #f0f0f0;
+    border: 1px solid #bbb;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Kolom Sidebar (Kanan) */
+.sidebar {
+    flex: 1; /* Mengambil ruang lebih kecil */
+    border-left: 1px solid #eee;
+    padding-left: 20px;
+}
+
+.sidebar h4 {
+    margin-top: 0;
+    border-bottom: 2px solid #9389a9;
+    padding-bottom: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f9f9f9;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Footer Ungu */
+footer {
+    background-color: #9389a9;
+    color: white;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 12px;
 }
